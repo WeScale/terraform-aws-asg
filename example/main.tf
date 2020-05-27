@@ -21,8 +21,8 @@ module "vpc-wsc" {
 
 module "autoscale_group" {
 
-  source  = "mehdi-wsc/asg-wsc/aws"
-  version = "0.0.6"
+  source  = "../"
+
 
   name = "test"
 
