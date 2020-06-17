@@ -7,14 +7,12 @@
 ```
 module "autoscale_group" {
 
-  source  = "mehdi-wsc/asg-wsc/aws"
-  version = "0.0.6"
-
+  source                    = "WeScale/asg/aws"
+  version                   = "1.0.0"
   name                      = "test"
   firstname                 = "antoine"
   lastname                  = "xavier"
   owner                     = "Aws"
-
   max_size                  = "5"
   min_size                  = "2"
   health_check_grace_period = "300"
@@ -50,7 +48,7 @@ module "autoscale_group" {
 | ami                       | Ami id used in template.                                                                          | string       | no       |
 | instance_type             | the instance type                                                                                 | string       | yes      |
 | key                       | ssh keys to access in instances.                                                                  | string       | no       |
-| security_groups           | A list of security group IDs to associate.                                                        | list(string) | no           |
+| security_groups           | A list of security group IDs to associate.                                                        | list(string) | no       |
 | ip                        | Associate a public ip address with the network interface.                                         | bool         | no       |
 
 
