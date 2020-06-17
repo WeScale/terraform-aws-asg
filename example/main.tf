@@ -26,10 +26,7 @@ module "autoscale_group" {
 
   source  = "WeScale/asg/aws"
   version = "1.0.0"
-
-
   name = "test"
-
   max_size            = "5"
   min_size            = "2"
   desired_capacity    = "3"
